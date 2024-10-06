@@ -14,7 +14,7 @@
         <h3>Nova categoria</h3>
 
         <input type="text" placeholder="Descricao " id="descricao" />
-        <input type="text" placeholder="Preco " id="preco" />
+        <input type="number" placeholder="Preco " id="preco" />
         <input type="text" placeholder="Categoria " id="categoria" />
 
         <div class="btn-group">
@@ -27,5 +27,26 @@
         </div>
         <button id="cadastrar">Cadastrar</button>
     </form>
+    <script>
+        let descricao = document.querySelector('#descricao')
+        let preco = document.querySelector('#preco')
+        let categoria = document.querySelector('#categoria')
+
+        function cadastrar(){
+            if( !descricao.value || !preco.value || !categoria.value){
+            alert('Preencher todos os campos')
+            return false
+            }else{
+                alert('Cadastrado com sucesso')
+                }
+            }
+
+        document.querySelector('#cadastrar').onclick = (e) => {
+            e.preventDefault();
+
+            cadastrar()
+        }
+        
+    </script>
 </body>
 </html>
