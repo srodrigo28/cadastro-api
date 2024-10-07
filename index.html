@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <script defer> AOS.init(); </script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Animação -->
@@ -29,7 +28,8 @@
         </div>
         <button id="cadastrar">Cadastrar</button>
     </form>
-    <script>
+    <script defer>
+        AOS.init(); //inicial a aniamação
         let descricao = document.querySelector('#descricao')
         let preco = document.querySelector('#preco')
         let categoria = document.querySelector('#categoria')
